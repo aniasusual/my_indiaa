@@ -13,12 +13,15 @@ exports.getAllProducts = async (req, res, next) => {
         const products = await apiFeature.query;
         // const books = await productModel.find();
 
+        const allProductsList = await productModel.find();
+
         if (products.length != 0) {
             res.json({
                 status: "success",
                 products,
                 productsCount,
-                resultPerPage
+                resultPerPage,
+                allProductsList
             })
         }
 

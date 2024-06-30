@@ -35,6 +35,7 @@ import ProcessOrder from "./components/processOrder/ProcessOrder.jsx";
 import UsersList from "./components/userList/UsersList.jsx";
 import UpdateUser from "./components/updateUser/UpdateUser.js";
 import ProductReviews from "./components/productReviews/ProductReviews.jsx";
+import ListAllProducts from "./pages/ListAllProductsMock/ListAllProducts.jsx";
 
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/mock/products" element={<ListAllProducts />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/products/:keyword" element={<Shop />} />
         <Route path="/login" element={<Login />} />

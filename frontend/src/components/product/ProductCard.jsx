@@ -16,6 +16,7 @@ const Product = ({ product }) => {
   return (
     product && (
       <Link className="productCard" to={`/product/${product._id}`}>
+        {/* {product && <h6>{product._id}</h6>} */}
         <img src={product.images[0].url} alt={product.name} />
         <p>{product.name}</p>
         <div>
