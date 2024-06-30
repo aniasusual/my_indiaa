@@ -22,6 +22,7 @@ const Home = () => {
           <h3>Your journey begins now</h3>
           <h1>Fall in love</h1>
           <Link to="/shop"><button className='buttonOverImage'>Shop</button></Link>
+          <Link to="/mock/products"><button className='buttonOverImage'>All products list (mock server)</button></Link>
         </div>
       </div>
 
