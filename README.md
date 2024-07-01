@@ -6,7 +6,7 @@ This Ecommerce app is built using the MERN stack with MongoDB as the database. I
 ## Live Link - [https://6625a26151c5b61c70a04a40--golden-moonbeam-274b68.netlify.app/](https://660ed9e7987141235b1db971--thunderous-begonia-288545.netlify.app/)
 ## Features
 
-### The mock server is only included in dev mode not in the live project hosting.
+### The mock server and PWA is only included in dev mode not in the live project hosting.
 
 ### Assignment points
 #### Component Creation:
