@@ -3,26 +3,44 @@
 ## Overview
 This Ecommerce app is built using the MERN stack with MongoDB as the database. It provides users with functionalities to buy items. Below are the key features and functionalities of the app:
 
-## Live Link - https://6625a26151c5b61c70a04a40--golden-moonbeam-274b68.netlify.app/
+## Live Link - [https://6625a26151c5b61c70a04a40--golden-moonbeam-274b68.netlify.app/](https://660ed9e7987141235b1db971--thunderous-begonia-288545.netlify.app/)
 ## Features
 
-### Homepage
-- Displays all the notes created by the user.
-- Clicking on a particular note displays all the details of that note.
+### The mock server is only included in dev mode not in the live project hosting.
 
-### Create New Note
-- Floating button at the bottom right allows users to create a new note.
-- New note includes:
-  - Title
-  - Description (Rich text editor with various formatting options)
-  - Image/Video link section with an option to preview the link content.
-  - Color palette to select the background of the notes.
+### Assignment points
+#### Component Creation:
+- Developed reusable components such as Header, Footer, Product Card, and Navigation Menu using React.js.
+- Components follow best practices for performance and maintainability
+#### State Management:
+- Implemented state management using Redux for handling global state.
+- Demonstrated how you manage local component state versus global state.
+#### Responsive Design:
+- Ensured the interface is fully responsive across different devices and screen sizes.
+#### PWA Implementation:
+- Implemented service workers to enable offline capabilities.
+#### Additional Features:
+- Implemented a product listing page that fetches data from a mock API.
+- Included basic functionality such as adding items to a shopping cart and viewing the cart.
+
+### Homepage
+- Displays all the Menu, search bar, shop button, featured products, 2 carousels to display products, and also functionality for user to login/ register in the website, cart,userDial appears if user is logged in.
+- The UserDial only appears if the user has logged in. Several other functionalities open when user logs in.
+- The functionality of the cart only appears when the user has logged-in.
 
 ### Search Functionality
 - Homepage includes a search bar to search products based on their name.
 
-### Sorting
-- Sorting functionality (ascending/descending) based on the time at which the note is saved.
+### Admin Privilages - User Authorisation
+- Admin is given special privilages to monitor all the users, products and transactions.
+- For the testing purposes I have given all the new users a default admin status.
+- From admin panel admin can create new products, see reviews of products, delete and monitor users and products etc.
+
+### Profile Page
+- each user has a indivisual profile page from where user can update his/her credentials.
+
+### Payment Integration - Stripe
+- User can ad items to the cart and proceed to checkout and will be redirected to stripe payment page where user can make a payment and confirm order.
 
 ### State Management
 - Utilizes Redux to maintain the state of the application, providing efficient data management and updates.
@@ -46,11 +64,12 @@ To get started with the Todo app, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install dependencies using `npm install` for root folder as well as frontend folder. Please keep in mind the node_modules of the backend folder are in the root directory itself. So kindly run the the npm i command for backend in the root directory itself.
-4. Also I have shared my mongodb credentials in the env file, so that you dont need to set up anything else other than installing dependencies in root and frontend folders.
-5. Set up the MongoDB database.
-6. Configure authentication settings.
-7. Run the development server using `npm start`.
-8. Access the app in your browser at the specified port.
+4. PLease note the npm i command for the backend folder must be run in the root folder only, and npm i for frontend must be run in frontend folder.
+5. Also I have shared my mongodb credentials in the env file, so that you dont need to set up anything else other than installing dependencies in root and frontend folders.
+6. Set up the MongoDB database.
+7. Configure authentication settings.
+8. Run the development server using `npm start`.
+9. Access the app in your browser at the specified port.
 
 ## Technologies Used
 - **Frontend**: ReactJS, Redux, HTML, CSS
